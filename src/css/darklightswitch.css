@@ -1,0 +1,56 @@
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 99px;
+    background-color: transparent;
+    border: black solid 2px;
+    margin: 15px;
+    cursor: pointer;
+
+    transition: all 0.4s;
+}
+
+.switch:hover {
+    border-radius: 0px;
+}
+
+.switch p {
+    color: black;
+    font-size: 12px;
+}
+
+.switch .mode-value-text {
+    font-weight: bold;
+}
+
+
+/* Dark Mode */
+.dark-mode .switch p {
+    color: white;
+}
+
+/* Dark Mode */
+.dark-mode .switch {
+    border: white solid 2px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .switch {
+        padding: 7px 12px;
+    }
+    .switch p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .switch {
+        padding: 5px 10px;
+    }
+    .switch p {
+        font-size: 8px;
+    }
+}
